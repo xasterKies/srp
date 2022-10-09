@@ -10,10 +10,10 @@ def scan_port(ipaddress, port):
   try:
     sock = socket.socket() # Initiate the socket instance
     sock.connect((ipaddress, port)) # Connect to our target
-    print("[+] Port Opened  " + str(port))
+    print("[+] Port Opened " + str(port))
     sock.close()
   except:
-    pass
+    print("[-] Port Closed " + str(port))
 
 targets = input("[*] Enter Targets To Scan(split them by ,): ")
 ports = int(input("[*] Enter How Many Ports You Want To Scan: "))
