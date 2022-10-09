@@ -1,2 +1,2 @@
 # srp
-A simple tool to scan vulnerable ports on a website
+A simple tool to scan vulnerable ports on your network
