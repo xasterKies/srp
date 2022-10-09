@@ -1,8 +1,9 @@
 import socket 
-
+import termcolor
 
 
 def scan(target, ports):
+  print(termcolor.colored(('\n' + ' Starting Scan For ' + str(target)), 'green'))
   for port in range(1, ports):
     scan_port(target, port)
 
@@ -19,7 +20,7 @@ targets = input("[*] Enter Targets To Scan(split them by ,): ")
 ports = int(input("[*] Enter How Many Ports You Want To Scan: "))
 
 if ',' in targets:
-  print("[*] Scanning Multiple Targets")
+  print(termcolor.colored(("[*] Scanning Multiple Targets"), 'green'))
   for ip_addr in targets.split(','):
     scan(ip_addr.strip(' '), ports)
 else:
