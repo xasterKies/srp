@@ -43,14 +43,6 @@ Have you ever tried deploying an app on a server before? You will realize someti
 
 ## ⚙️ Running the project
 
-1. Install dependencies
-
-    ```bash
-    pip install termcolor
-    ```
-
-2. Start the project (in root of the project folder)
-
    ```bash
    python3 portscanner.py
    ```
