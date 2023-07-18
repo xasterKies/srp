@@ -35,11 +35,6 @@ Have you ever tried deploying an app on a server before? You will realize someti
    cd srp
    ```
 
-4. Initialize project
-
-   ```bash
-   git init
-   ```
 
 ## ⚙️ Running the project
 
